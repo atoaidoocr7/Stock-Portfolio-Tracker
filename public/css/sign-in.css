@@ -1,0 +1,69 @@
+body, html{
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  font-family: 'Asap', sans-serif;
+}
+
+.heading{
+  margin: 0 auto;
+}
+
+.container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  font-size:1.5rem;
+}
+
+.forgot{
+  font-size: 1rem;
+  margin-left: 5rem;
+}
+
+input{
+  width: 100%;
+  height:2rem;
+}
+
+.row{
+  border: 1px solid gray;
+  border-radius: 5%;
+  height: auto;
+  padding: 2rem;
+}
+
+.box{
+  margin: 1rem;
+}
+
+button{
+  margin: 0 auto;
+  /* padding: 0.4rem; */
+  border-radius: 0.9rem;
+  width: 100%;
+  padding:5%;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(41, 97, 230);
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(1, 101, 158);
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color:rgb(140, 199, 223);
+}

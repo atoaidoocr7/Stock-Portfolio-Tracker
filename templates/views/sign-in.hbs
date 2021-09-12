@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in - STOCK-API</title>
+    <link rel="stylesheet" type="text/css" href="../../css/sign-in.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+<base href="/">
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div >
+                {{#if success}}
+                    <p>{{success}}</p>
+                {{/if}}
+                {{#if errors}}
+                    <p>{{errors}}</p>
+                {{/if}}
+            </div>
+            <form method="post" action="/stock-api/sign-in">
+                <div class="col">
+                    <h1 class="heading">Sign in to your account</h1>
+                    <div class="box">
+                        <p>Email</p>
+                        <input placeholder="Enter Email" type="text" name="email">
+                    </div>
+                    <div class="box">
+                        <p>Password <span class="forgot"><a href="#">Forgot your password?</a></span></p>
+                        <input placeholder="Enter Password" style="display:inline-block" type="password" name="password">
+                    </div>
+                    <div class="box">
+                        <button type="submit">Sign In</button>
+                    </div>
+                    
+                    <div class="box">
+                        <h3>Don't have an account? <span><a href="/stock-api/sign-up">Sign up</a>
+                            </span></h3>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
